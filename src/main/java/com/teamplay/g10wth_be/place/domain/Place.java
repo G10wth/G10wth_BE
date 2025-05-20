@@ -39,7 +39,7 @@ public class Place {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
-    private Member createdBy; //TODO: Member로 교체
+    private Member createdBy;
 
     @CreatedDate
     @Column(updatable = false, nullable = false)
