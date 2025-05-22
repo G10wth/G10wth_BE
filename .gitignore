@@ -35,3 +35,18 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# ========== 🔐 민감 파일 제외 추가 ==========
+
+# 환경변수 파일
+.env
+.env.*
+
+# 애플리케이션 설정 파일
+application.yml
+application-*.yml
+application.properties
+application-*.properties
+
+# 로컬 실행 전용 파일
+*.local.yml
