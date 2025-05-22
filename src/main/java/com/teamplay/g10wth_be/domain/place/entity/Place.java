@@ -1,4 +1,4 @@
-package com.teamplay.g10wth_be.place.domain;
+package com.teamplay.g10wth_be.domain.place.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
