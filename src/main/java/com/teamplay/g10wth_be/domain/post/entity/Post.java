@@ -1,5 +1,7 @@
 package com.teamplay.g10wth_be.domain.post.entity;
 
+import com.teamplay.g10wth_be.domain.member.entity.Member; // 엔티티 구조 파악 및 커밋
+
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
