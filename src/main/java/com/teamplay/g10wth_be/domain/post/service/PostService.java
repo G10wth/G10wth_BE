@@ -51,6 +51,4 @@ public class PostService {
                 .orElseThrow(() -> new IllegalArgumentException("글이 존재하지 않습니다."));
         repo.delete(p);
     }
-
-    public Long like(Long id) {}
 }
