@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 @Getter
 @Table(name = "post")
 public class Post {
+  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "post_id") // 명확한 테이블 구분을 위한 임의의 이름 추가
@@ -34,14 +35,20 @@ public class Post {
     @Column(nullable = false)
     private String content;
 
-    private String imageUrls;
+    private String image_urls;
 
-    private double likes;
+    private Double likes;
 
-    @CreatedDate
-    @Column(updatable = false, nullable = false)
+    @CreationTimestamp
+    @Column(updatable = false)
     private LocalDateTime createdAt;
 
-    @LastModifiedDate
+    @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    public void update(PostUpdateRequest dto) {
+        dto.title();
+        dto.content();
+        dto.imageUrls();
+    }
 }
